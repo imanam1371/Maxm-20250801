@@ -1,6 +1,6 @@
 tensorflow
 tensorflow-model-optimization>=0.2.1
-numpy
+numpy # hyperparameter optimization
 optuna
 matplotlib
 seaborn
@@ -8,19 +8,19 @@ scikit-learn==1.2.2
 #python3.8-tk
 #hep_ml==0.7.0
 #pyqt5
-jupyter
-jupyter_client
+jupyter #create and share documents containing live code
+jupyter_client #It allows other programs to interact with Jupyter 
 #opencv-python-headless
-sqlalchemy
-flask-sqlalchemy
-optuna-dashboard
-optuna-distributed
+sqlalchemy #designed for efficient and high-performing database access
+flask-sqlalchemy #simplifies the integration of SQLAlchemy
+optuna-dashboard #visualizations of hyperparameter optimization results
+optuna-distributed #distribute hyperparameter optimization tasks across multiple compute nodes
 #mongoengine
-netCDF4
-siphon
-cartopy
-networkx
+netCDF4 #read and write netCDF 
+siphon #accessing datasets such as netCDF 
+cartopy #plotting and analyzing geospatial data cartographic 
+networkx 
 xarray
-rasterio
-rioxarray
+rasterio #reading and writing geospatial raster datasets
+rioxarray #xtension of the xarray library for geospatial raster 
 xgboost
