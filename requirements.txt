@@ -1,26 +1,33 @@
-tensorflow
-tensorflow-model-optimization>=0.2.1
-numpy # hyperparameter optimization
-optuna
-matplotlib
-seaborn
-scikit-learn==1.2.2
-#python3.8-tk
-#hep_ml==0.7.0
-#pyqt5
-jupyter #create and share documents containing live code
-jupyter_client #It allows other programs to interact with Jupyter 
-#opencv-python-headless
-sqlalchemy #designed for efficient and high-performing database access
-flask-sqlalchemy #simplifies the integration of SQLAlchemy
-optuna-dashboard #visualizations of hyperparameter optimization results
-optuna-distributed #distribute hyperparameter optimization tasks across multiple compute nodes
-#mongoengine
-netCDF4 #read and write netCDF 
-siphon #accessing datasets such as netCDF 
-cartopy #plotting and analyzing geospatial data cartographic 
-networkx 
-xarray
-rasterio #reading and writing geospatial raster datasets
-rioxarray #xtension of the xarray library for geospatial raster 
-xgboost
+#Data_Handling_Libraries
+import os                                                      # File system operations
+import json                                                    # Working with JSON files
+import pandas as pd                                            # Tabular data handling
+import numpy as np                                             # Numerical operations
+import xarray as xr                                            # Multi-dimensional labeled data
+import dask                                                    # Parallel computing and lazy evaluation
+import netCDF4 as nc                                           # Reading netCDF files (common in climate science)
+
+#Machine_Learning_Libraries
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error  # Model evaluation metrics
+from sklearn.model_selection import train_test_split           # Splitting data
+from xgboost import XGBRegressor                               # XGBoost regressor
+import shap                                                    # SHAP values for model explainability
+import joblib                                                  # Model saving/loading
+
+#Visualization_Libraries
+import matplotlib.pyplot as plt                                # Plotting library
+from matplotlib import ticker                                  # Customizing axis ticks
+import matplotlib.colors as mcolors                            # Handling color maps
+import seaborn as sns                                          # Statistical data visualization
+ 
+#Geospatial_Tools
+import cartopy.feature as cfeature                             # Map features like coastlines, borders
+import cartopy.crs as ccrs                                     # Coordinate reference systems
+import rioxarray as rxr                                        # Spatial raster data handling with xarray
+from rasterio.merge import merge                               # Merge multiple raster files
+from rasterio.plot import show                                 # Plotting raster data
+from geopy.distance import geodesic                            # Compute geographic distance
+
+#Utility_Libraries
+from tqdm import tqdm                                          # Progress bars for loops
+import random                                                  # Random number generation
